@@ -3,15 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>
+    {% block title %}
+    Snickers
+    {% endblock title %}
+  </title>
 </head>
 <body>
-  <header> header </header>
+  <header> 
+    <nav>
+      <ul>
+        <li><a href="/">Django </a> </li>
+        <li><a href="/about">Web framework </a> </li>
+      </ul>
+    </nav>
+ </header>
   <main>
     {% block content %}
     <h1> Why im here? </h1>
     {% endblock content %}
   </main>
-  <footer>footer </footer>
+  <footer>
+    Copyright IL
+ </footer>
 </body>
 </html>
